@@ -2,9 +2,11 @@
 import '../../styles/about.scss'
 // component
 import React, {Component} from 'react'
-import { Container, Row, Col } from 'reactstrap'
+import { Container, Row, Col, ListGroup, ListGroupItem } from 'reactstrap'
 import {Link} from 'react-router-dom'
 import Me2 from '../../imgs/Me2.JPG'
+import linkedin from '../../imgs/linkedin.png'
+import github from '../../imgs/github.png' 
 
 class About extends Component {
     render (){
@@ -12,7 +14,7 @@ class About extends Component {
             <div className='main'>
                 <Container className='container'>
                     <Row>
-                        <Col>
+                        <Col className="listGroupCon">
                             <h2>Who I am</h2>
                             <p> Hiya , my name is James Klostermeyer Jr. and I work as a Freelance Web Developer in Lenoir, North Carolina.
                                 I have over 10 years experience in many things computers and have always had a passon for programming, electronic, and
@@ -20,12 +22,23 @@ class About extends Component {
                                 and decided I wanted to freelance and work with local small businesses and mom & pop shops. Even if you're not one of those,
                                 please <Link to='/hire'>contact me</Link>. I would be honored to build your next website or webapp for you. 
                             </p>
+                            <p>
+                                If you would like to connect another way or view my github, please use one of the links below. 
+                            </p>
+                            <Row>
+                                <a href="https://www.linkedin.com/in/james-klostermeyer-jr-42b49889/">
+                                    <img className="socialMediaIcons" src={linkedin} alt='linkedin icon provided by freepik on flaticon.com' />
+                                </a>
+                                <a href="https://www.github.com/KodingKlosty">
+                                   <img className="socialMediaIcons" src={github} alt='GitHub icon' />
+                                </a>
+                            </Row>
                         </Col>
                         <Col>
                             <img 
                             className="imgClass"
                             src={Me2} 
-                            alt='Coding on a Mac'
+                            alt='Me in Pittsburg Started it Tee'
                             />
                         </Col>
                     </Row>
