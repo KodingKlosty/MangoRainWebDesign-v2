@@ -6,13 +6,18 @@ import {
   CarouselIndicators,
   CarouselCaption
 } from 'reactstrap';
+// style import
+import '../../styles/carousel.scss'
+//image import
+import eSignout from '../../imgs/eSignout.png';
+
 
 const items = [
   {
-    src: 'https://via.placeholder.com/1000x500?text=Picture+Selction+Needed',
-    link: 'http://www.google.com',
-    altText: 'Slide 1',
-    caption: 'Slide 1'
+    src: eSignout,
+    link: 'http://192.168.1.101:3000',
+    altText: 'eSignout',
+    caption: 'An Employee Tracking App'
   },
   {
     src: 'https://via.placeholder.com/1000x500?text=Picture+Selction+Needed',
@@ -28,7 +33,7 @@ const items = [
   }
 ];
 
-const Example = (props) => {
+const SiteMover = (props) => {
   const [activeIndex, setActiveIndex] = useState(0);
   const [animating, setAnimating] = useState(false);
 
@@ -51,7 +56,7 @@ const Example = (props) => {
 
   const slides = items.map((item) => {
     return (
-      <CarouselItem
+      <CarouselItem 
         onExiting={() => setAnimating(true)}
         onExited={() => setAnimating(false)}
         key={item.src}
@@ -60,13 +65,13 @@ const Example = (props) => {
             <img src={item.src} alt={item.altText} />
         </a>
         
-        <CarouselCaption captionText={item.caption} captionHeader={item.caption} />
+        <CarouselCaption  captionText={item.caption} captionHeader={item.altText} />
       </CarouselItem>
     );
   });
 
   return (
-    <Carousel
+    <Carousel 
       activeIndex={activeIndex}
       next={next}
       previous={previous}
@@ -79,4 +84,4 @@ const Example = (props) => {
   );
 }
 
-export default Example;
+export default SiteMover;

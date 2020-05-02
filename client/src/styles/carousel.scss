@@ -1,0 +1,17 @@
+@import "./variables.scss";
+
+.carousel-caption {
+    color: black;
+}
+
+.carousel-control-prev{
+    background-color: $ok-btn;
+}
+
+.carousel-control-next{
+    background-color: $ok-btn;
+}
+
+.carousel-indicators li{
+    background-color: $ok-btn
+}
