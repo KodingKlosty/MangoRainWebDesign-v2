@@ -4,7 +4,7 @@
   "description": "Mango Rain Web Design Main Site with API",
   "main": "server.js",
   "scripts": {
-    "install-client": "yarn install --prefix client",
+    "install-client": "npm install --prefix client",
     "install-server": "npm install",
     "build-client": "yarn build --prefix client",
     "start": "node server.js",
