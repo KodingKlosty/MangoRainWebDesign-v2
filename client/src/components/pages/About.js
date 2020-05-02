@@ -4,7 +4,7 @@ import '../../styles/about.scss'
 import React, {Component} from 'react'
 import { Container, Row, Col, ListGroup, ListGroupItem } from 'reactstrap'
 import {Link} from 'react-router-dom'
-import Me2 from '../../imgs/Me2.JPG'
+import Me2 from '../../imgs/Me2.png'
 import linkedin from '../../imgs/linkedin.png'
 import github from '../../imgs/github.png' 
 
