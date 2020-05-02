@@ -1,0 +1,12 @@
+//imports
+@import './variables.scss';
+
+.container{
+    justify-content: center;
+    width: 1000px;
+    margin: auto;
+
+    .carousel{
+        justify-content: center;
+    }
+}

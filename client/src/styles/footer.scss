@@ -1,0 +1,18 @@
+@import './variables.scss';
+
+
+.footerdiv {
+    background-color: $primary-color;
+    padding: 15px
+}
+
+.centerFooter {
+    text-align: center;
+    color: rgb(55, 55, 55);
+    font-weight: bold;
+}
+
+.breakerBar {
+    background-color: $ok-btn;
+    padding: 2px;
+}
