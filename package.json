@@ -6,7 +6,7 @@
   "scripts": {
     "install-client": "npm install --prefix client",
     "install-server": "npm install",
-    "build-client": "yarn build --prefix client",
+    "build-client": "npm build --prefix client",
     "start": "node server.js",
     "server": "nodemon server.js",
     "client": "npm start --prefix client",
