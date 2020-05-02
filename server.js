@@ -1,7 +1,7 @@
 const express = require('express')
 const mongoose = require('mongoose')
 const bodyParser = require('body-parser')
-
+const path = require('path')
 const users = require('./api/routes/users');
 const form = require('./api/routes/form');
 
@@ -22,6 +22,16 @@ mongoose.connect(db, { useCreateIndex: true,useUnifiedTopology: true, useNewUrlP
 // Routes
 app.use('/api/users', users)
 app.use('/api/form', form)
+
+// Serve Static assets if in production
+if(process.env.NODE_ENV === 'production') {
+    // Set static folder
+    app.use(express.static(path.join(__dirname, 'client/build')));
+
+    app.get('*', function(req, res) {
+        res.sendFile(path.join(__dirname, 'client','build', 'index.html'));
+    })
+}
 
 // Error catching middleware
 app.use(function(err,res,req,next){
