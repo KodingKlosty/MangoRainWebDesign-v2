@@ -11,7 +11,8 @@
     "server": "nodemon server.js",
     "client": "npm start --prefix client",
     "dev": "concurrently \"npm run server\" \" npm run client \"",
-    "heroku-postbuild": "concurrently \"npm:install-*\"; concurrently \"npm:build-*\""
+    "dev-heroku-postbuild": "concurrently \"npm:install-*\"; concurrently \"npm:build-*\"",
+    "heroku-postbuild": "NPM_CONFIG-PRODUCTION-false npm install --prefix client && npm run build --prefix client"
   },
   "repository": {
     "type": "git",
