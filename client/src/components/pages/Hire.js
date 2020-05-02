@@ -8,9 +8,8 @@ import { Button,
     Label, 
     Input, 
     Container,
-    Alert,
     } from 'reactstrap'
-import { Redirect } from 'react-router-dom';
+
 
 class Hire extends Component {
     constructor(props){
