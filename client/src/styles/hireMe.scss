@@ -1,0 +1,27 @@
+@import './variables.scss';
+
+.hireForm{
+    justify-content: center;
+    width: 600px;
+    margin: auto;
+    color: white;
+
+}
+.subHeader{
+    text-align: center;
+}
+.label{
+    text-align: left;
+    color: white
+}
+
+.submitBtn{
+    background-color: $ok-btn;
+    border-color: $ok-btn;
+    font-weight: bold;
+}
+
+.submitBtn:hover{
+    background-color: $ok-btn-faded;
+
+}

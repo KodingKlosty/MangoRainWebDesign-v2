@@ -1,0 +1,30 @@
+//imports
+@import './variables.scss';
+@import './baseStyle.scss';
+
+//classnames
+.main{
+    background-color: $primary-color;
+    display: flex;
+    flex-flow: column;
+    min-height: 71vh;
+}
+
+.mainContainer{
+    margin: auto;
+}
+
+.eightyPx{
+    font-weight: bold;
+    font-size: 80px;
+    font-family: $righteous;
+    color: white;
+    text-align: right;
+}
+
+
+// not used currently
+.imgClass{
+    height: 500px;
+    width: 400px;
+}

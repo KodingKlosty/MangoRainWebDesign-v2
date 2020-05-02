@@ -1,0 +1,44 @@
+@import './variables.scss';
+
+.headerdiv {
+    background-color: $primary-color;
+    font-family: $righteous;
+    position: relative;
+    padding-top: 15px;
+};
+
+h1 {
+    color: white;
+}
+
+.navImg {
+    justify-content: center;
+};
+
+.navContainer {
+    justify-content: center;
+    padding-top: 5px;
+    color: black;
+
+    :hover {
+        color: black;
+        background-color: $caution-btn;
+        border-radius: 15px 15px 0px 0px;    
+    }
+
+    .activeLink {
+        background-color: $ok-btn;
+        border-radius: 15px 15px 0px 0px;
+    }
+    
+};
+
+.allLinks {
+    color: white; 
+}
+
+
+.breakerBar {
+    background-color: $ok-btn;
+    padding: 2px;
+}

@@ -1,0 +1,37 @@
+{
+  "name": "mangorainwebdesign-v2",
+  "version": "0.0.1",
+  "description": "Mango Rain Web Design Main Site with API",
+  "main": "server.js",
+  "scripts": {
+    "install-client": "yarn install --prefix client",
+    "install-server": "npm install",
+    "build-client": "yarn build --prefix client",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \" npm run client \"",
+    "heroku-postbuild": "concurrently \"npm:install-*\"; concurrently \"npm:build-*\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KodingKlosty/MangoRainWebDesign-v2.git"
+  },
+  "author": "James Klostermeyer Jr.",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/KodingKlosty/MangoRainWebDesign-v2/issues"
+  },
+  "homepage": "https://github.com/KodingKlosty/MangoRainWebDesign-v2#readme",
+  "dependencies": {
+    "bcrypt": "^4.0.1",
+    "body-parser": "^1.19.0",
+    "concurrently": "^5.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.11",
+    "uuidv4": "^6.0.8"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  }
+}

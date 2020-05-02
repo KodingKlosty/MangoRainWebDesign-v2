@@ -1,0 +1,32 @@
+//imports
+@import './variables.scss';
+
+.loginForm {
+    justify-content: center;
+    width: 600px;
+    margin: auto;
+    color: white;
+
+    h2{
+        text-align: center;
+    }
+
+    .label{
+        text-align: left;
+        color: white
+    }
+
+    .loginBtn{
+        background-color: $ok-btn;
+        border-color: $ok-btn;
+        font-weight: bold;
+    }
+
+    .loginBtn:hover{
+        background-color: $ok-btn-faded;
+
+    }
+}
+
+
+
