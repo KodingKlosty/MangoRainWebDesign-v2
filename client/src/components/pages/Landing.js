@@ -4,7 +4,7 @@ import  '../../styles/landing.scss'
 // needed components
 import React, {Component} from 'react'
 import { Container,Row,Col } from 'reactstrap'
-import Me1 from '../../imgs/Me1.JPG'
+import Me1 from '../../imgs/Me1.png'
 
 class Landing extends Component {
     render (){
