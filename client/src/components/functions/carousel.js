@@ -10,6 +10,7 @@ import {
 import '../../styles/carousel.scss'
 //image import
 import eSignout from '../../imgs/eSignout.png';
+import todo from '../../imgs/todo.png';
 
 
 const items = [
@@ -20,10 +21,10 @@ const items = [
     caption: 'An Employee Tracking App'
   },
   {
-    src: 'https://via.placeholder.com/1000x500?text=Picture+Selction+Needed',
-    link: 'https://www.amazon.com',
-    altText: 'Slide 2',
-    caption: 'Slide 2'
+    src: todo,
+    link: 'http://localhost:3001',
+    altText: 'Todos',
+    caption: 'A simple ToDo list'
   },
   {
     src: 'https://via.placeholder.com/1000x500?text=Picture+Selction+Needed',
