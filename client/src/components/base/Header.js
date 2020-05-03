@@ -20,7 +20,6 @@ class Header extends Component {
                     <Navbar className="navImg">
                             <h1>Mango Rain</h1>
                             <img 
-                                class="center"
                                 src={mangoRainLogoCrop}
                                 height="150px"
                                 width="150px"

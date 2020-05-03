@@ -11,6 +11,7 @@ import About from './components/pages/About'
 import Hire from './components/pages/Hire'
 import ClientPortal from './components/pages/ClientPortal'
 import Portfolio from './components/pages/Portfolio'
+import Dashboard from './components/pages/Dashboard';
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
               <Route path="/hire" exact component={Hire}/>
               <Route path="/portal" exact component={ClientPortal}/>
               <Route path="/portfolio" exact component={Portfolio}/>
+              <Route path="/dashboard" exact component={Dashboard}/>
             </Switch>
          <Footer />
       </Router>

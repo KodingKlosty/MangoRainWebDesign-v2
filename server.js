@@ -4,11 +4,20 @@ const bodyParser = require('body-parser')
 const path = require('path')
 const users = require('./api/routes/users');
 const form = require('./api/routes/form');
+const portal = require('./api/routes/portal');
+const passport = require('passport');
 
 const app = express();
 
+// passport requirement
+require('./config/passport-conf')
+
 // Bodyparser Middleware
 app.use(bodyParser.json());
+
+// Passport Middleware
+app.use(passport.initialize());
+app.use(passport.session());
 
 // DB Config (MongoDB)
 const db = require('./config/keys').mongoURI
@@ -22,6 +31,8 @@ mongoose.connect(db, { useCreateIndex: true,useUnifiedTopology: true, useNewUrlP
 // Routes
 app.use('/api/users', users)
 app.use('/api/form', form)
+app.use('/api/portal',portal)
+
 
 // Serve Static assets if in production
 if(process.env.NODE_ENV === 'production') {

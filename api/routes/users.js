@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const bcrypt = require('bcrypt');
+const passport = require('passport')
 
 // User Model
 const User = require('../models/User');
@@ -53,5 +54,9 @@ router.delete('/:id', (req,res,next) => {
                 .then(() => res.json({success: true})))
             .catch(next)
 });
+
+
+
+
 
 module.exports = router;

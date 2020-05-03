@@ -30,7 +30,6 @@ class Hire extends Component {
         this.setState({
             [name]: value 
         });
-        console.log(this.state)
     }
 
     onloadCallback = () => {
