@@ -22,7 +22,7 @@ const items = [
   },
   {
     src: todo,
-    link: 'https://mangotodos.herokuapp.com/',
+    link: 'https://mangotodo.netlify.app/',
     altText: 'Todos',
     caption: 'A simple ToDo list'
   },
