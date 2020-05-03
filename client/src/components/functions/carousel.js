@@ -16,22 +16,17 @@ import todo from '../../imgs/todo.png';
 const items = [
   {
     src: eSignout,
-    link: 'http://192.168.1.101:3000',
+    link: 'https://esignoutprod.herokuapp.com/',
     altText: 'eSignout',
     caption: 'An Employee Tracking App'
   },
   {
     src: todo,
-    link: 'http://localhost:3001',
+    link: 'https://mangotodos.herokuapp.com/',
     altText: 'Todos',
     caption: 'A simple ToDo list'
   },
-  {
-    src: 'https://via.placeholder.com/1000x500?text=Picture+Selction+Needed',
-    link: 'https://www.yahoo.com',
-    altText: 'Slide 3',
-    caption: 'Slide 3'
-  }
+
 ];
 
 const SiteMover = (props) => {
