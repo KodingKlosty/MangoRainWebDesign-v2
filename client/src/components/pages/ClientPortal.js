@@ -40,8 +40,18 @@ class ClientPortal extends Component {
         return(
             <div className='main'>
                 <Container className='loginForm'>
-                    <h2>Please Login Below</h2>
-                    <Form onSubmit={this.loginUser}>
+                    <h2>Under Construction</h2>
+                </Container>
+            </div>
+        )  // End Return
+    } // End Render
+}
+
+export default ClientPortal
+
+
+/* 
+ <Form onSubmit={this.loginUser}>
                         <FormGroup>
                             <Label className="label">Username: </Label>
                             <Input name="username" onChange={this.handleChange}/>
@@ -54,10 +64,4 @@ class ClientPortal extends Component {
                             <Button className='loginBtn' href='/dashboard'>Login</Button>
                         </FormGroup>
                     </Form>
-                </Container>
-            </div>
-        )  // End Return
-    } // End Render
-}
-
-export default ClientPortal
+*/

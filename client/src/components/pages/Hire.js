@@ -57,7 +57,7 @@ class Hire extends Component {
                <Container className='hireForm'>
                    <Form onSubmit={this.humanCheck}>
                        <FormGroup className='subHeader'>
-                            <h2>If you would like to contact me please fill out the form below and click submit.</h2>                    
+                            <h2>Form is Currently Broken. Please do not fill it out. It will not reach me.</h2>                    
                        </FormGroup>
                        <FormGroup>
                            <Label className='label'>Company Name:</Label>
@@ -91,4 +91,6 @@ export default Hire
             [name]: value 
         });
     }
+
+    If you would like to contact me please fill out the form below and click submit
 */
