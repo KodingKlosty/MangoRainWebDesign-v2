@@ -61,17 +61,17 @@ class Hire extends Component {
                        </FormGroup>
                        <FormGroup>
                            <Label className='label'>Company Name:</Label>
-                           <Input type="text" name="companyName" onChange={this.handleInputChange}/>
+                           <Input type="text" name="companyName" disabled onChange={this.handleInputChange}/>
                        </FormGroup>
                        <FormGroup>
                            <Label className='label'>Name:</Label>
-                           <Input type="text" name="requesterName" onChange={this.handleInputChange}/>
+                           <Input type="text" name="requesterName" disabled onChange={this.handleInputChange}/>
                        </FormGroup>
                        <FormGroup>
                            <Label className='label'>What can I help you with?</Label>
-                           <Input type='textarea' name="message"onChange={this.handleInputChange}/>
+                           <Input type='textarea' name="message" disabled onChange={this.handleInputChange}/>
                        </FormGroup>
-                       <Button className="submitBtn" type='submit'>Submit</Button>
+                       <Button className="submitBtn" type='submit' disabled>Submit</Button>
                    </Form>
                </Container>
             </div>
