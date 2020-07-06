@@ -16,7 +16,7 @@ import todo from '../../imgs/todo.png';
 const items = [
   {
     src: eSignout,
-    link: 'https://esignoutprod.herokuapp.com/',
+    link: 'https://esignout-v2.herokuapp.com/',
     altText: 'eSignout-v2',
     caption: 'An Employee Tracking App'
   },
