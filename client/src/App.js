@@ -8,10 +8,10 @@ import Footer from './components/base/Footer'
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 import Landing from './components/pages/Landing'
 import About from './components/pages/About'
-import Hire from './components/pages/Hire'
-import ClientPortal from './components/pages/ClientPortal'
+//import Hire from './components/pages/Hire'
+//import ClientPortal from './components/pages/ClientPortal'
 import Portfolio from './components/pages/Portfolio'
-import Dashboard from './components/pages/Dashboard';
+//import Dashboard from './components/pages/Dashboard';
 
 
 function App() {
@@ -22,10 +22,7 @@ function App() {
             <Switch>
               <Route path="/" exact component={Landing}/>
               <Route path="/about" exact component={About}/>
-              <Route path="/hire" exact component={Hire}/>
-              <Route path="/portal" exact component={ClientPortal}/>
               <Route path="/portfolio" exact component={Portfolio}/>
-              <Route path="/dashboard" exact component={Dashboard}/>
             </Switch>
          <Footer />
       </Router>

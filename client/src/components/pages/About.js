@@ -17,10 +17,10 @@ class About extends Component {
                         <Col className="listGroupCon">
                             <h2>Who I am</h2>
                             <p> Hiya , my name is James Klostermeyer Jr. and I work as a Freelance Web Developer in Lenoir, North Carolina.
-                                I have over 10 years experience in many things computers and have always had a passon for programming, electronic, and
+                                I have over 10 years experience in many things computers and have always had a passon for programming, electronics, and
                                 being creative. I want to build your next website! I recently graduated from Full Sail University with a Bacholors in Web Design and Development
                                 and decided I wanted to freelance and work with local small businesses and mom & pop shops. Even if you're not one of those,
-                                please <Link to='/hire'>contact me</Link>. I would be honored to build your next website or webapp for you. 
+                                please contact me via the LinkedIn icon below. I would be honored to build your next website or webapp for you. 
                             </p>
                             <p>
                                 If you would like to connect another way or view my github, please use one of the links below. 

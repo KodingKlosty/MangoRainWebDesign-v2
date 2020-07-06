@@ -17,7 +17,7 @@ const items = [
   {
     src: eSignout,
     link: 'https://esignoutprod.herokuapp.com/',
-    altText: 'eSignout',
+    altText: 'eSignout-v2',
     caption: 'An Employee Tracking App'
   },
   {

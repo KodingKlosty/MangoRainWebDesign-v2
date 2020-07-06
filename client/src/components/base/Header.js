@@ -55,24 +55,6 @@ class Header extends Component {
                                     About
                             </NavLink>
                         </NavItem>
-                        <NavItem>
-                            <NavLink  
-                                tag={RRDNavLink} 
-                                className="allLinks"  
-                                activeClassName='activeLink' 
-                                to="/hire">
-                                    Hire Me
-                            </NavLink>
-                        </NavItem>
-                        <NavItem>
-                            <NavLink  
-                                tag={RRDNavLink} 
-                                className="allLinks"  
-                                activeClassName='activeLink' 
-                                to="/portal">
-                                Client Portal
-                            </NavLink>
-                        </NavItem>
                     </Nav>
                 </div>
                 <div className='breakerBar'>
